@@ -11,9 +11,6 @@ class App extends Component {
     bad: 0,
   };
 
-  // options = Object.keys(this.state);
-  // values = Object.values(this.state);
-
   feedbackSortCount = option => {
     this.setState(prevState => ({ [option]: prevState[option] + 1 }));
     console.log(this.state);
@@ -42,8 +39,6 @@ class App extends Component {
             <Notification message={'There is no feedback'} />
           ) : (
             <Statistics
-              // options={Object.keys(this.state)}
-              // stateValues={Object.values(this.state)}
               good={this.state.good}
               neutral={this.state.neutral}
               bad={this.state.bad}

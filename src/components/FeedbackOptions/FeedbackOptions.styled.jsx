@@ -11,10 +11,11 @@ export const FeedbackBtn = styled.button`
   padding: 3px 5px;
   cursor: pointer;
 
-  border: grey 1px solid;
+  border: #e3e2dc 1px solid;
   border-radius: 4px;
 
   &: hover {
-    background-color: #a9c293;
+    background-color: #f4fca9;
+    border-color: #e8e5c8;
   }
 `;

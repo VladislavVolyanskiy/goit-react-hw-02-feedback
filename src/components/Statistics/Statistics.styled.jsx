@@ -7,4 +7,5 @@ export const StatsStyledList = styled.ul`
 
 export const StatsStyledItem = styled.li`
   text-transform: capitalize;
+  margin-top: 8px;
 `;

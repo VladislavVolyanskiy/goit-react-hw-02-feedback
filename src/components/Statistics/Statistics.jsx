@@ -22,32 +22,7 @@ export const Statistics = ({
   );
 };
 
-// export const Statistics = ({
-//   options,
-//   stateValues,
-//   total,
-//   positivePercentage,
-// }) => {
-//   return (
-//     <>
-//       <StatsStyledList>
-//         {options.map((option, i) => (
-//           <StatsStyledItem key={option}>
-//             {option}: {stateValues[i]}
-//           </StatsStyledItem>
-//         ))}
-//       </StatsStyledList>
-//       <p>Total: {total()}</p>
-//       <p>
-//         Positive feedback: {positivePercentage() ? positivePercentage() : 0}%
-//       </p>
-//     </>
-//   );
-// };
-
 Statistics.propTypes = {
-  // options: PropTypes.arrayOf(PropTypes.string),
-  // stateValues: PropTypes.arrayOf(PropTypes.number),
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,
