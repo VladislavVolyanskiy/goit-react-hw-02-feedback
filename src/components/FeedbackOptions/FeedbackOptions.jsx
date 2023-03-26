@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 
 import { FeedbackOptsWrap, FeedbackBtn } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ stateKeys, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <FeedbackOptsWrap>
-      {stateKeys.map(stateKey => (
+      {options.map(option => (
         <FeedbackBtn
           type="button"
-          key={stateKey}
-          onClick={() => onLeaveFeedback(stateKey)}
+          key={option}
+          onClick={() => onLeaveFeedback(option)}
         >
-          {stateKey}
+          {option}
         </FeedbackBtn>
       ))}
     </FeedbackOptsWrap>
@@ -20,6 +20,6 @@ export const FeedbackOptions = ({ stateKeys, onLeaveFeedback }) => {
 };
 
 FeedbackOptions.propTypes = {
-  stateKeys: PropTypes.arrayOf(PropTypes.string.isRequired),
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
   onLeaveFeedback: PropTypes.func.isRequired,
 };
